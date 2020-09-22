@@ -1,0 +1,12 @@
+<h2> <%= @camper.name.titlecase %> Show Page </h2>
+
+<%= @camper.name %> | <%= @camper.age %>
+<br><br>
+<b>Camper Activities:</b>
+
+
+<ul>
+<% @camper.activities.each do |activity| %>
+  <li> <%= activity.name %> </li>
+<% end %>
+</ul>

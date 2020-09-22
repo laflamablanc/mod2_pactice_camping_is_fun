@@ -1,0 +1,12 @@
+<h2> Camper Form </h3>
+
+<%= form_for @camper do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :age %>
+  <%= f.number_field :age, within: 5..20 %>
+  <br>
+  <%= f.submit %>
+
+<% end %>
